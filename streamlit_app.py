@@ -21,7 +21,7 @@ from sklearn.preprocessing import OneHotEncoder
 
 @st.cache_data
 def read_and_preprocess_data():
-    data = pd.read_csv(f'data/bike-sharing-hourly.csv')
+    data = pd.read_csv(f'C:\\capstoneproject3\\bike-sharing-hourly.csv')
     # First, we make sure that 'dteday' is a datetime type.
     data['dteday'] = pd.to_datetime(data['dteday'])
 
